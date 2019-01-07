@@ -16,7 +16,6 @@ export default class Select extends Component {
         }
 
         this.url = "https://viacep.com.br/ws/";
-        //this.getCep = "13331320";
         this.jsonFinal = "/json/";
         this.arraySelected = [];
     }
