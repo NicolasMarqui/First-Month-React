@@ -93,8 +93,8 @@ export default class Select extends Component {
         }
     }
 
-    inputHandler = () => {
-       
+    inputHandler = (e) => {
+        this.setState({value: e.target.value})
     }
 
 
@@ -151,7 +151,7 @@ export default class Select extends Component {
             <h1>Digite o CEP</h1>
             <form onSubmit={this.pegarCEP}>
                 <input type="text" placeholder="CEP" ref={input => this.numberInput = input} id="cidadeInput" 
-                 disabled={(this.state.inputDisabled) ? "disabled" : ""} onChange={this.inputHandler}></input>
+                 disabled={(this.state.inputDisabled) ? "disabled" : ""} value={this.state.value} onChange={this.inputHandler}></input>
                 <button type="onSubmit">Mandar CEP</button>
             </form>
             <div>
