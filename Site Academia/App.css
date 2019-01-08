@@ -1,0 +1,96 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display:flex;
+  overflow: none;
+}
+
+.localMusculacao{
+  /* border: 2px solid red; */
+  height: 100vh;
+  flex-grow: 1;
+  flex-basis: 400px;
+  text-align: center;
+  background: url('./imgs/bgMus.jpeg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  opacity: 0.8;
+ }
+
+.localCross{
+  /* border: 2px solid blue; */
+  height: 100vh;
+  flex-grow: 1;
+  flex-basis: 400px;
+  text-align: center;
+  background: url('./imgs/bgCross.jpeg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  opacity: 0.8;
+  
+}
+
+.localMusculacao .mainContentMusc{
+  height: 150px;
+  width:50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  opacity: 0.8;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.localCross .mainContentCross{
+  height: 150px;
+  width:50%;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  opacity: 0.8;
+  top: 50%;
+  left : 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+}
+
+.localMusculacao .mainContentMusc h1{
+  letter-spacing: 2px;
+  padding: 4%;
+}
+
+.localMusculacao .mainContentMusc button{
+  padding: 3%;
+  width: 25%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.9;
+  text-decoration: none;
+}
+
+.localMusculacao .mainContentMusc button:hover{
+  transform: scale(1.2,1.2);
+}
+
+.localCross .mainContentCross button:hover{
+  transform: scale(1.2,1.2);
+}
+
+.localCross .mainContentCross h1{
+  letter-spacing: 2px;
+  padding: 4%;
+}
+
+.localCross .mainContentCross button{
+  padding: 3%;
+  width: 25%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  cursor: pointer;
+}
